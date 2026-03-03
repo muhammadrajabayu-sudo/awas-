@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Awass!!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: black;
+      color: lime;
+      font-family: monospace;
+      text-align: center;
+      padding-top: 50px;
+    }
+    #result {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      background: lime;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Sistem Sedang Memindai...</h2>
+<button onclick="startPrank()">Mulai</button>
+
+<div id="result"></div>
+
+<script>
+function startPrank() {
+  const result = document.getElementById("result");
+  result.innerHTML = "Memindai perangkat...";
+  
+  setTimeout(() => {
+    result.innerHTML = "Mengakses data rahasia...";
+  }, 1500);
+
+  setTimeout(() => {
+    result.innerHTML = "Mendeteksi tingkat KECANTIKAN...";
+  }, 3000);
+
+  setTimeout(() => {
+    result.innerHTML = "⚠ ERROR ⚠<br><br>KAMU DI HACK KARENA TERLALU CANTIK";
+  }, 4500);
+}
+</script>
+
+</body>
+</html>
